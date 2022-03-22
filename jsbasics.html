@@ -1,0 +1,88 @@
+<!doctype>
+<html>
+<head>
+    <title>Examples</title>
+</head>
+<body>
+    <script>
+        //typeof
+        document.write(typeof math);
+        document.write("<br>");
+        document.write(typeof 6);
+        document.write("<br>");
+        document.write(typeof "charu");
+        document.write("<br>");
+        // interaction of alert,prompt,confirm
+        
+        // alert
+        alert("Hello pranavi");
+        // prompt
+        let name=prompt("What is your name?");
+        alert(`Hai ${name}`);
+        // confirm
+        let quit=confirm("Are you going to Quit?");
+        alert(quit);
+        document.write('1'+2); //-->this gives value of 12
+        document.write("<br>");
+        document.write(6-'2'); //-->this gives value of 4
+        document.write("<br>");
+        let x='2';
+        document.write(+x);
+        document.write("<br>");
+        // // unary operator
+        let apple="2";
+        let oranges="6";
+        document.write(+apple+ +oranges);
+        document.write("<br>");
+        document.write(apple+oranges);
+        let obj = {};
+
+        obj.x = 3;
+        document.write("<br>");
+        document.write(obj.x); // Prints 3.
+        document.write("<br>");
+        console.log(obj); // Prints { x: 3 }.
+        document.write("<br>");
+        const key = "y";
+        obj[key] = 5;
+        document.write(obj[key]); // Prints 5.
+        document.write("<br>");
+        console.log(obj); // Prints { x: 3, y: 5 }.
+        // functions
+        function showMessage() {
+         let message = "Hello, I'm JavaScript!"; // local variable
+         alert( message );
+         }
+         showMessage(); // Hello, I'm JavaScript!
+         alert( message );
+
+         let userName = 'John';
+         function showMessage() {
+             let message = 'Hello, ' + userName; 
+             alert(message);
+           }   
+           function sum(a, b) {
+           return a + b;
+           }
+
+         let result = sum(1, 2);
+         alert( result ); // 3
+
+         showMessage(); 
+         let sum = 0;
+    //    while
+      while (true) {
+
+      let value = +prompt("Enter a number", '');
+ 
+      if (!value) break; // (*)
+
+       sum += value;
+
+      }
+     alert( 'Sum: ' + sum );
+
+    </script>
+    
+</body>
+</html>
